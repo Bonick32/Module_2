@@ -7,7 +7,7 @@ while True:
 
     if num >= 0 and quantity > 0:
         print(num)
-        del my_list[0]
+        del my_list[0] # надеюсь не слишком радикально для этой задачи
         continue
     elif num < 0 or quantity == 0:
         break
