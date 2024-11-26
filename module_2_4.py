@@ -14,8 +14,8 @@ for i in numbers:
        else:
            prime.append(i)
 
-print(prime)
-print(not_prime)
+print("Prime", prime)
+print("Not Prime", not_prime)
 
 # почему else должен располагаться именно под for, а не как в приведенном ниже виде?
 # я потратил 2 часа времени, пытаясь понять, почему написанный ниже код выводит несколько продублированных значений
