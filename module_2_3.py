@@ -6,7 +6,10 @@ while True:
     quantity = len(my_list)
 
     if num >= 0 and quantity > 0:
-        print(num)
+        if num == 0:
+            del num
+        else:
+            print(num)
         del my_list[0] # надеюсь не слишком радикально для этой задачи
         continue
     elif num < 0 or quantity == 0:
