@@ -6,7 +6,7 @@ def stone_with_number():
 sWn = stone_with_number()
 
 print(sWn)
-num = 12
+
 for i in range(1, 21):
     for j in range(1, 21):
         if sWn % (i + j) == 0:
