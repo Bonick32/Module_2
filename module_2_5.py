@@ -10,15 +10,20 @@
 # print(result1)
 
 
-def get_matrix(n, m, value):
-    matrix = []
-    for i in range(n):
-        matrix.append([])
-        for j in range(m):
-            matrix[i].append(value) # как всегда - из-за того, что упустил такой способ добавления в список по индексу
-                                    # долго провозился, перебирая различные способы.
+# def get_matrix(n, m, value):
+#     matrix = []
+#     for i in range(n):
+#         matrix.append([])
+#         for j in range(m):
+#             matrix[i].append(value)
+#
+#     return matrix
 
-    return matrix
+
+def get_matrix(n, m, value):
+    return [[value for _ in range(m)] for _ in range(n)] #blackbox оптимизировал функцию...
+
+
 
 result_1 = get_matrix(3,5,48)
 result_2 = get_matrix(2, 2, 7890)
